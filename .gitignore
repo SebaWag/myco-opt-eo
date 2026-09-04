@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+latex/LatexTemplate/
+latex/automl.sty
+*.log
+*.aux
+.DS_Store

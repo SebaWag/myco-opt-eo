@@ -1,0 +1,13 @@
+{
+  "source": "Beiler et al. 2010/2015, Douglas-fir CMN, Rhizopogon spp.",
+  "n_trees": 67,
+  "n_edges_cmn": 144,
+  "modularity_Q": 0.5375,
+  "gamma_scale_free": 1.0594,
+  "sigma_smallworld": 2.376,
+  "L_avg_path": 1.5835,
+  "diameter": 6,
+  "C_clustering": 0.0923,
+  "k_avg_degree": 4.299,
+  "n_communities": 19
+}

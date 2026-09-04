@@ -1,0 +1,31 @@
+{
+  "random_search": {
+    "rmse_val": 0.6036143901110009,
+    "params": {
+      "n_estimators": 178,
+      "learning_rate": 0.04723352470493121,
+      "num_leaves": 68,
+      "max_depth": 20,
+      "min_child_samples": 26,
+      "subsample": 0.6325283144700296,
+      "colsample_bytree": 0.9234598246511545,
+      "reg_alpha": 2.1156897010044347,
+      "reg_lambda": 1.0589910272104102
+    }
+  },
+  "optuna": {
+    "rmse_val": 0.5919011373695485,
+    "params": {
+      "n_estimators": 333,
+      "learning_rate": 0.014915757127211642,
+      "num_leaves": 96,
+      "max_depth": 8,
+      "min_child_samples": 83,
+      "subsample": 0.8055297936015271,
+      "colsample_bytree": 0.4637849285006782,
+      "reg_alpha": 4.199192280908067,
+      "reg_lambda": 3.00120582375693
+    }
+  },
+  "baseline_lag1_test_rmse": 0.8445712222486328
+}
