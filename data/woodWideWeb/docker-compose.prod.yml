@@ -1,0 +1,15 @@
+include:
+  - path: observability/docker-compose.yml
+
+services:
+  woodwideweb:
+    image: ghcr.io/darrylcauldwell/woodwideweb:latest
+    ports:
+      - "127.0.0.1:3000:80"
+    networks:
+      - web
+    restart: unless-stopped
+
+networks:
+  web:
+    driver: bridge

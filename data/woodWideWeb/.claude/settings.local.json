@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:react-postprocessing.docs.pmnd.rs)",
+      "WebFetch(domain:nph.onlinelibrary.wiley.com)",
+      "WebFetch(domain:www.researchgate.net)"
+    ]
+  }
+}

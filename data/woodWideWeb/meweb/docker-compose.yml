@@ -1,0 +1,27 @@
+# =============================================================================
+# meWeb INTEGRATION FILE
+# =============================================================================
+# Include this in meWeb's main docker-compose.yml:
+#   include:
+#     - path: woodwideweb/docker-compose.yml
+#
+# Manual steps for meWeb integration:
+#   1. Add include directive to meWeb's docker-compose.yml and docker-compose.production.yml
+#   2. Add Caddyfile route block for woodwideweb subdomain
+#   3. Add Prometheus scrape target if Caddy metrics are enabled
+#   4. Create Grafana logs dashboard for woodwideweb
+# =============================================================================
+
+services:
+  woodwideweb:
+    image: ghcr.io/darrylcauldwell/woodwideweb:latest
+    container_name: woodwideweb
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "http://localhost:80/"]
+      interval: 30s
+      timeout: 3s
+      start_period: 5s
+      retries: 3
+    networks:
+      - web

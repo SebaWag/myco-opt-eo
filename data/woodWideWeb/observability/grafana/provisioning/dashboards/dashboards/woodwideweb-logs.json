@@ -1,0 +1,86 @@
+{
+  "annotations": { "list": [] },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": null,
+  "links": [],
+  "liveNow": true,
+  "panels": [
+    {
+      "datasource": { "type": "loki", "uid": "loki" },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": { "h": 20, "w": 24, "x": 0, "y": 0 },
+      "id": 1,
+      "options": {
+        "dedupStrategy": "none",
+        "enableLogDetails": true,
+        "prettifyLogMessage": false,
+        "showCommonLabels": false,
+        "showLabels": true,
+        "showTime": true,
+        "sortOrder": "Descending",
+        "wrapLogMessage": true
+      },
+      "targets": [
+        {
+          "datasource": { "type": "loki", "uid": "loki" },
+          "expr": "{job=\"docker\", service=~\"woodwideweb|caddy\"} |~ \"(^|\\\\s)level=($log_level)(\\\\s|$)\"",
+          "legendFormat": "",
+          "refId": "A"
+        }
+      ],
+      "title": "",
+      "type": "logs"
+    }
+  ],
+  "refresh": "10s",
+  "schemaVersion": 39,
+  "tags": ["woodwideweb", "logs"],
+  "templating": {
+    "list": [
+      {
+        "current": {
+          "selected": true,
+          "text": "Info",
+          "value": "info|warn|warning|error|fatal|critical|panic"
+        },
+        "hide": 2,
+        "includeAll": false,
+        "label": "Log Level",
+        "multi": false,
+        "name": "log_level",
+        "options": [
+          {
+            "selected": false,
+            "text": "Error",
+            "value": "error|fatal|critical|panic"
+          },
+          {
+            "selected": false,
+            "text": "Warning",
+            "value": "warn|warning|error|fatal|critical|panic"
+          },
+          {
+            "selected": true,
+            "text": "Info",
+            "value": "info|warn|warning|error|fatal|critical|panic"
+          }
+        ],
+        "query": "",
+        "skipUrlSync": false,
+        "type": "custom"
+      }
+    ]
+  },
+  "time": { "from": "now-1h", "to": "now" },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "Wood Wide Web Logs",
+  "uid": "woodwideweb-logs",
+  "version": 1,
+  "weekStart": ""
+}
