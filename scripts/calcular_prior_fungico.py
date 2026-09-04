@@ -9,7 +9,7 @@ import json
 import networkx as nx
 import numpy as np
 
-with open("/home/seba/shiva/myco_eo_paper/data/woodWideWeb/public/data/network.json") as f:
+with open("/home/seba/shiva/myco_eo_paper/data/raw/beiler2015_cmn_network.json") as f:
     net = json.load(f)
 
 trees, genets, edges = net["trees"], net["genets"], net["edges"]

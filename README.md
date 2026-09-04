@@ -37,7 +37,7 @@ myco-opt-eo/
 │   ├── ml_features.csv             # 3,638 instances × 23 features + ET0(t+1)
 │   ├── fungal_prior_metrics.json   # The biological prior (Q, γ, σ, L, C)
 │   ├── experimento_controlado.json # Full raw results
-│   └── woodWideWeb/                # Beiler 2010/2015 network data (source: github.com/darrylcauldwell/woodWideWeb)
+│   └── raw/beiler2015_cmn_network.json  # Beiler 2010/2015 CMN graph (source: github.com/darrylcauldwell/woodWideWeb)
 └── figures/
     └── fig1_convergencia.png       # Convergence curves (Fig. 1 of paper)
 ```
