@@ -1,0 +1,15 @@
+# Myco-Opt: Fungal-Network Priors for LLM-Driven Hyperparameter Optimization
+# in Agricultural Earth Observation — reproducible environment
+#
+# Python 3.11+ recommended.
+# Generated from the environment that produced the paper's results
+# (ABOSI4EO @ AutoML 2026 submission).
+
+# --- Core numeric / ML ---
+numpy==2.3.5
+lightgbm==4.7.0
+scikit-learn==1.9.0
+optuna==4.9.0
+
+# --- Biological prior (mycorrhizal network metrics) ---
+networkx==3.6.1

@@ -59,7 +59,13 @@ python3 scripts/calcular_prior_fungico.py
 python3 scripts/experimento_controlado.py
 ```
 
-**Dependencies**: `numpy pandas scikit-learn lightgbm optuna networkx matplotlib requests`
+**Dependencies** (pinned for reproducibility):
+
+```bash
+pip install -r requirements.txt
+```
+
+> Uses `numpy`, `scikit-learn`, `lightgbm`, `optuna` (experiments) and `networkx` (fungal prior metrics).
 
 **Note on LLM arms**: if the API call fails or JSON parsing fails, the trial falls back to a uniform draw inside the (full or prior-constrained) space — making the comparison *more conservative* for Myco-Opt, never less.
 
