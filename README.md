@@ -1,6 +1,6 @@
 # 🍄 Myco-Opt: Fungal-Network Priors for LLM-Driven Hyperparameter Optimization in Agricultural Earth Observation
 
-> **Workshop submission**: ABOSI4EO 2026 — AutoML, Benchmarking & Open Science Infrastructure for Earth Observation (co-located with AutoML Conference, Ljubljana, Oct 1 2026)
+> **Status**: manuscript complete, results reproducible. **Preprint — not yet peer-reviewed and not submitted to any venue.**
 
 **Author**: Sebastián Wagner — Wagner Solutions AI (independent researcher)
 
@@ -106,7 +106,7 @@ pip install -r requirements.txt
   title = {Myco-Opt: Fungal-Network Priors for LLM-Driven Hyperparameter
            Optimization in Agricultural Earth Observation},
   year = {2026},
-  note = {Workshop submission, ABOSI4EO @ AutoML 2026},
+  note = {Manuscript (preprint, not yet peer-reviewed)},
   url = {https://github.com/SebaWag/myco-opt-eo}
 }
 ```

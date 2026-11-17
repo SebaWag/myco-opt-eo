@@ -3,7 +3,7 @@
 #
 # Python 3.11+ recommended.
 # Generated from the environment that produced the paper's results
-# (ABOSI4EO @ AutoML 2026 submission).
+# (preprint; not submitted to any venue).
 
 # --- Core numeric / ML ---
 numpy==2.3.5

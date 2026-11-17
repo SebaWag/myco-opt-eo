@@ -1,7 +1,6 @@
 % ============================================================================
-% Myco-Opt × EO — Extended Abstract for ABOSI4EO Workshop @ AutoML 2026
-% Deadline: 14 September 2026 (extended)
-% Author: Sebastian Wagner (independent researcher / autodidact)
+% Myco-Opt × EO — Preprint. NOT submitted to any venue.
+% Author: Sebastian Wagner (independent researcher)
 % ============================================================================
 \documentclass[11pt]{article}
 
@@ -13,8 +12,12 @@
 \usepackage{graphicx}
 \usepackage{amsfonts}
 
-% Workshop track: single-blind, no anonymization needed per CFP
-\usepackage[workshop,revealauthors]{automl}
+% Preprint format: standard article, no venue template
+\usepackage[margin=1in]{geometry}
+\usepackage{authblk}
+\usepackage[hidelinks]{hyperref}
+\renewcommand\Authfont{\normalsize}
+\renewcommand\Affilfont{\small\normalfont}
 
 \usepackage{natbib}
 \bibliographystyle{apalike}
@@ -22,7 +25,7 @@
 \title{Myco-Opt: Fungal-Network Priors for LLM-Driven Hyperparameter
 Optimization in Agricultural Earth Observation}
 
-\author[1]{\nameemail{Sebastián Wagner}{sebastian@wsolutionsai.com}}
+\author[1]{Sebastián Wagner, \texttt{sebastian@wsolutionsai.com}}
 
 \affil[1]{Wagner Solutions AI (independent researcher)}
 
@@ -291,8 +294,8 @@ grows with evaluation cost); we use one network and one EO task (follow-up will
 use GlobalFungi \citep{vetrovsky2020} and neural EO models); the
 topology-to-hyperparameter mapping is interpretable but partly heuristic; and
 we use only measured statistics, acknowledging the critique of
-common-mycorrhizal-network inference \citep{karst2023}. Aligned with this workshop's
-open-infrastructure emphasis, all code, data and the prior will be released
+common-mycorrhizal-network inference \citep{karst2023}. Aligned with open-science
+principles, all code, data and the prior will be released
 open source.
 
 \section{Conclusion and future work}
